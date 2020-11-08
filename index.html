@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script id="mcjs">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TEDxYCCE</title>
+    <!-- <script id="mcjs">
       !(function (c, h, i, m, p) {
         (m = c.createElement(h)),
           (p = c.getElementsByTagName(h)[0]),
@@ -13,11 +16,7 @@
         "script",
         "https://chimpstatic.com/mcjs-connected/js/users/51c6dfcf2d82c8fe3062bb7ea/c2403a0d937047dd48d06e808.js"
       );
-    </script>
-
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TEDxYCCE</title>
+    </script> -->
 
     <!-- favicon icon T -->
     <link
@@ -37,10 +36,7 @@
       href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap"
       rel="stylesheet"
     />
-    <!-- navbar styles -->
-    <link rel="stylesheet" href="./style/navbar.css" />
-    <!-- Scrolling styles -->
-    <link href="./style/scrolling-nav.css" rel="stylesheet" />
+
     <!-- animate on scroll -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- animate css -->
@@ -48,6 +44,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+
     <!-- bootstrap -->
     <link
       rel="stylesheet"
@@ -56,71 +53,33 @@
       crossorigin="anonymous "
     />
 
-    <link rel="stylesheet " href="./style/comingsoon.css " />
-    <link rel="stylesheet " href="./style/graphics.css " />
+    <link rel="stylesheet" href="style.css" />
   </head>
 
-  <body id="page-top">
-    <!-- Navigation -->
-
-    <div class="container cover">
-      <!-- logo -->
-      <div class="row">
+  <body>
+    <div class="container">
+      <!-- logo image -->
+      <div id="logo" class="row animate__animated animate__fadeIn">
         <img
-          class="img-fluid p-5 float-left animate__animated animate__backInDown"
+          class="img-fluid p-5 float-left"
           src="./images/tedxYCCE_logo.png "
           alt="tedxycce logo "
         />
       </div>
 
       <!-- coming soon -->
-      <div class="row">
-        <div
-          class="msg text-center animate__animated animate__lightSpeedInLeft"
+      <div id="coming" class="row bg  animate__animated animate__fadeIn">
+        <p
+          class="display-1 mx-5 text-right text-white"
+          style="font-family: Yellowtail, Helvetica, sans-serif, Arial"
         >
-          <h1 class="display-1">Coming soon</h1>
-        </div>
+          Coming soon
+        </p>
       </div>
-      <br /><br /><br />
-      <!-- venue -->
-      <div class="row mt-5">
-        <div
-          class="jumbotron-fluid col-3 mt-1 venue-map animate__animated animate__zoomInLeft"
-        >
-          <iframe
-            style="margin-left: 50px"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3722.4356442935323!2d78.9785723!3d21.0951911!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4952117eaac51%3A0x6d8277793eb63d6a!2sYeshwantrao%20Chavan%20College%20of%20Engineering%20(YCCE)%2C%20Nagpur!5e0!3m2!1sen!2sin!4v1604229697975!5m2!1sen!2sin"
-            width="250"
-            height="275"
-            allowfullscreen=""
-            aria-hidden="false"
-            tabindex="0"
-            title="YCCE"
-          ></iframe>
-        </div>
 
-        <div
-          class="col-7 m-4 ml-5 text-white text-left venue animate__animated animate__fadeInRightBig"
-          style="border-left: 6px solid white"
-        >
-          <h2 class="overlay pl-4">
-            Venue: Yeshwantrao Chavan College of Engineering, Hingna Road,
-            Wanadongri, Nagpur, Maharashtra. 441110
-            <br />
-            <hr />
-            Ph. : +91-7104-242919, 242623
-            <br />
-            Email : tedxycce@gmail.com
-          </h2>
-        </div>
-        <!-- col end -->
-      </div>
-      <!-- row end -->
-
-      <br /><br /><br />
-      <div class="row mt-3">
+      <!-- subscribe -->
+      <div id="subscribe" class="row mt-5  animate__animated animate__fadeIn">
         <!-- Begin Mailchimp Signup Form -->
-        <br /><br />
         <link
           href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css"
           rel="stylesheet"
@@ -134,9 +93,9 @@
             width: 100%;
           }
           /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
-       We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+          We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
         </style>
-        <div id="mc_embed_signup" data-aos="fade-up">
+        <div id="mc_embed_signup">
           <form
             action="https://gmail.us2.list-manage.com/subscribe/post?u=51c6dfcf2d82c8fe3062bb7ea&amp;id=5dcc640c5e"
             method="post"
@@ -181,89 +140,92 @@
         </div>
         <!--End mc_embed_signup-->
       </div>
-      <!-- form row -->
-
-      <br /><br /><br /><br />
-      <br />
-      <div class="row">
-        <div
-          class="col-12 justify-content-center mx-2"
-          data-aos="zoom-in"
-          data-aos-duration="600"
-        >
-          <div class="abt-ted text text-break font-weight-bold">
-            <p class="h4">
-              What is TEDx? In the spirit of ideas worth spreading, TED has
-              created a program called TEDx. TEDx is a program of local,
-              self-organized events that bring people together to share a
-              TED-like experience. Our event is called TEDxYCCE, where x =
-              independently organized TED event. At our TEDxYCCE event, TED
-              Talks video and live speakers will combine to spark deep
-              discussion and connection in a small group. The TED Conference
-              provides general guidance for the TEDx program, but individual
-              TEDx events, including ours, are self-organized.
-            </p>
-          </div>
-        </div>
-      </div>
-      <br />
-      <br />
-      <div class="row">
-        <div class="col-12 justify-content-center">
-          <div
-            class="footer text font-weight-bold"
-            data-aos="fade-right"
-            data-aos-duration="600"
-          >
-            <p class="h5 font-weight-bold mx-2">
-              This independent TEDx event is operated under license from TED.
-            </p>
-          </div>
-        </div>
+    
+    <!-- venue -->
+    <div id="venue" class="row mt-5 animate__animated animate__fadeIn" >
+      <div
+        class="col-lg-3 col-md-5"
+      >
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3722.4356442935323!2d78.9785723!3d21.0951911!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4952117eaac51%3A0x6d8277793eb63d6a!2sYeshwantrao%20Chavan%20College%20of%20Engineering%20(YCCE)%2C%20Nagpur!5e0!3m2!1sen!2sin!4v1604229697975!5m2!1sen!2sin"
+          width="250"
+          height="275"
+          allowfullscreen=""
+          aria-hidden="false"
+          tabindex="0"
+          title="YCCE"
+        ></iframe>
       </div>
 
-      <br /><br /><br />
-      <br />
-      <!-- Footer -->
-      <footer class="py-5 bg-dark">
-        <div class="container">
-          <p class="m-0 text-center text-white h5">
-            Copyright &copy; 2020 TEDxYCCE
+      <div
+        class="col-lg-8 col-md-6 ml-3 ml-md-1 ml-lg-5 ml-xl-0 mt-3 mt-md-0 text-white text-left text-wrap"
+        style="border-left: 6px solid white"
+      >
+      <h2>Venue:</h2>
+        <h3 >
+          <hr>
+          Yeshwantrao Chavan College of Engineering, Hingna Road,
+          Wanadongri, Nagpur, Maharashtra. 441110
+          <br />
+          <hr />
+          Ph. : +91-7104-242919, 242623
+          <br />
+          Email : tedxycce@gmail.com
+        </h3>
+      </div>
+    </div>
+    <!-- venue end-->
+
+    <!-- what is tedx -->
+    <div id="tedx" class="row mt-5 animate__animated animate__fadeIn">
+      <div class="mx-2">
+        <div class="text-white text-break font-weight-bold">
+          <h3>What is TEDx?</h3>
+          <p class="h4">
+             In the spirit of ideas worth spreading, TED has
+            created a program called TEDx. TEDx is a program of local,
+            self-organized events that bring people together to share a
+            TED-like experience. Our event is called TEDxYCCE, where x =
+            independently organized TED event. At our TEDxYCCE event, TED
+            Talks video and live speakers will combine to spark deep
+            discussion and connection in a small group. The TED Conference
+            provides general guidance for the TEDx program, but individual
+            TEDx events, including ours, are self-organized.
           </p>
         </div>
-        <!-- /.container -->
-      </footer>
-
-      <!-- navbar toggle script -->
-      <script src="./js/navbar.js "></script>
-
-      <!-- navbar script -->
-      <script src="./js/scrolling-nav.js"></script>
-
-      <!-- animate on scroll script -->
-      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-      <script>
-        AOS.init();
-      </script>
-
-      <!-- jquery -->
-      <script
-        src="https://code.jquery.com/jquery-3.5.1.slim.min.js "
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj "
-        crossorigin="anonymous "
-      ></script>
-      <!-- popper js -->
-      <script
-        src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js "
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN "
-        crossorigin="anonymous "
-      ></script>
-      <!-- bootstrap -->
-      <script
-        src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js "
-        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV "
-        crossorigin="anonymous "
-      ></script>
+      </div>
     </div>
+    
+    <!-- independent event -->
+    <div id="event" class="row mt-5 animate__animated animate__fadeIn">
+        <p class="h4 text-center font-weight-bold mx-2"
+        style="color: #e62b1e;">
+          This independent TEDx event is operated under license from TED.
+        </p>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer" class="mt-5 py-2 bg-dark animate__animated animate__fadeIn">
+        <p class="m-0 text-center text-white h5">
+          Copyright &copy; 2020 TEDxYCCE
+        </p>
+    </footer>
+    
+    <!-- bootstrap related scripts -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
